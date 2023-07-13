@@ -24,10 +24,10 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientbong', function(
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientdream', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientpercs', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
-    local dream = Ply.Functions.GetItemByName("dream-weed")
+    local dream = Ply.Functions.GetItemByName("percs")
     local bottle = Ply.Functions.GetItemByName(Config.BottleItem)
     if dream ~= nil and bottle ~= nil then
         cb(true)
@@ -36,10 +36,10 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientdream', function
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredienthazy', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientfental', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
-    local hazy = Ply.Functions.GetItemByName("hazy-weed")
+    local hazy = Ply.Functions.GetItemByName("fental")
     local bottle = Ply.Functions.GetItemByName(Config.BottleItem)
     if hazy ~= nil and bottle ~= nil then
         cb(true)
@@ -48,10 +48,10 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredienthazy', function(
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientcrush', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientxan', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
-    local crush = Ply.Functions.GetItemByName("crush-weed")
+    local crush = Ply.Functions.GetItemByName("xan")
     local bottle = Ply.Functions.GetItemByName(Config.BottleItem)
     if crush ~= nil and bottle ~= nil then
         cb(true)
@@ -60,10 +60,10 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientcrush', function
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientbloomer', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientoxy', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
-    local bloomer = Ply.Functions.GetItemByName("bloomer-weed")
+    local bloomer = Ply.Functions.GetItemByName("oxy")
     local bottle = Ply.Functions.GetItemByName(Config.BottleItem)
     if bloomer ~= nil and bottle ~= nil then
         cb(true)
@@ -72,11 +72,11 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientbloomer', functi
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientweed-drink', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientlean', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
     local can = Ply.Functions.GetItemByName("aluminumcan")
-    local drinkmix = Ply.Functions.GetItemByName("drink-mix")
+    local drinkmix = Ply.Functions.GetItemByName("DoctorScriptPad")
     local streetweed = Ply.Functions.GetItemByName("streetweed")
     if can ~= nil and drinkmix ~= nil and streetweed ~= nil then
         cb(true)
@@ -101,10 +101,10 @@ QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientgiftset', functi
     end
 end)
 
-QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientweedbrownie', function(source, cb)
+QBCore.Functions.CreateCallback('crp-pharm:server:get:ingredientmorhpine', function(source, cb)
     local src = source
     local Ply = QBCore.Functions.GetPlayer(src)
-    local brownie = Ply.Functions.GetItemByName("brownie-mix")
+    local brownie = Ply.Functions.GetItemByName("CrimScriptPad ")
     local streetweed = Ply.Functions.GetItemByName("streetweed")
     if brownie ~= nil and streetweed ~= nil then
         cb(true)
